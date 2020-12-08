@@ -27,6 +27,8 @@
 
   <!-- Main Stylesheet File -->
   <link href="../../css/style.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.58.3/codemirror.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.58.3/theme/elegant.min.css">
 
   
 
@@ -145,7 +147,7 @@
                 </div>
           
                   <div class="col-lg-5 col-md-8">
-                    <pre>
+                    <textarea id="fileoutput">
 ### welcome_assignment_answers
 ### Input - All eight questions given in the assignment.
 ### Output - The right answer for the specific question.
@@ -196,7 +198,7 @@ if __name__ == "__main__":
     debug_question = "What layer of the TCP/IP model the protocol TCP belongs to? - The answer should be a numeric number"
     print(debug_question)
     print(welcome_assignment_answers(debug_question))
-        </pre>
+        </textarea>
                     </div>
                   </div>
             </div>
@@ -250,4 +252,26 @@ if __name__ == "__main__":
 
   <!-- Template Main Javascript File -->
   <script src="../../js/main.js"></script>
+  <!-- Code Mirror -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.58.3/codemirror.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.58.3/mode/xml/xml.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.58.3/mode/htmlmixed/htmlmixed.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.58.3/mode/clike/clike.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.58.3/mode/python/python.min.js"></script>
+
+  <script type="text/javascript">
+        var editor;
+        $(function () {
+            editor = CodeMirror.fromTextArea(document.getElementById("fileoutput"), {
+                lineNumbers: true,
+                matchBrackets: true,
+                height: "800",
+                lineWrapping: true,
+                indentUnit: 4,
+                mode: "text/x-python" //
+            });
+
+            editor.setSize("auto", "auto")
+        });
+    </script>
 </body>

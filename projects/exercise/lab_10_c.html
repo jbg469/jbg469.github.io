@@ -203,7 +203,7 @@
                 </div>
           
                   <div class="col-lg-5 col-md-8">
-                    <pre>
+                    <textarea id="fileoutput">
 /*
 Author: John Guevara
 Course: CSCI-136
@@ -321,7 +321,7 @@ int main() {
 return 0;
 }
 
-                        </pre>
+                        </textarea>
                     </div>
                   </div>
             </div>
@@ -375,4 +375,26 @@ return 0;
 
   <!-- Template Main Javascript File -->
   <script src="../../js/main.js"></script>
+  <!-- Code Mirror -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.58.3/codemirror.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.58.3/mode/xml/xml.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.58.3/mode/htmlmixed/htmlmixed.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.58.3/mode/clike/clike.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.58.3/mode/python/python.min.js"></script>
+
+  <script type="text/javascript">
+        var editor;
+        $(function () {
+            editor = CodeMirror.fromTextArea(document.getElementById("fileoutput"), {
+                lineNumbers: true,
+                matchBrackets: true,
+                height: "800",
+                lineWrapping: true,
+                indentUnit: 4,
+                mode: "text/x-csrc" //text/x-python
+            });
+
+            editor.setSize("auto", "auto")
+        });
+    </script>
 </body>

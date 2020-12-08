@@ -1244,6 +1244,9 @@ body.mobile-nav-active #mobile-nav-toggle i {
   color: #fff;
 }
 
+#contact li a:visited {color: #888;
+}
+
 #contact .form #sendmessage {
   color: #71c55d;
   border: 1px solid #71c55d;
@@ -1355,4 +1358,15 @@ body.mobile-nav-active #mobile-nav-toggle i {
 .footer .copyrights p a, .footer .copyrights .credits a {
   letter-spacing: 0;
   color: #71c55d;
+}
+
+/*CODE MIRROR*/
+
+.CodeMirror {border-top: 1px solid black; border-bottom: 1px solid black; background-color: burlywood;}
+.CodeMirror {
+height: 100%
+}
+.CodeMirror-scroll {
+overflow-y: hidden;
+overflow-x: auto;
 }
