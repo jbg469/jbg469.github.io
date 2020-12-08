@@ -1362,7 +1362,7 @@ body.mobile-nav-active #mobile-nav-toggle i {
 
 /*CODE MIRROR*/
 
-.CodeMirror {border-top: 1px solid black; border-bottom: 1px solid black; background-color: burlywood;}
+.CodeMirror {border-top: 1px solid black; border-bottom: 1px solid black;}
 .CodeMirror {
 height: 100%
 }
