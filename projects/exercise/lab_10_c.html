@@ -27,6 +27,8 @@
 
   <!-- Main Stylesheet File -->
   <link href="../../css/style.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.58.3/codemirror.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.58.3/theme/elegant.min.css">
 
   
 
@@ -274,7 +276,7 @@ void printMovie(Movie mv){// this fuction prints the movie genre and duration
 void printTimeSlot(TimeSlot ts){// we calc the endtime here and output in instructed format 
 Time endTime=addMinutes(ts.startTime,ts.movie.duration);
 printMovie(ts.movie);
-cout<<" [starts at "<<ts.startTime.h<<":"<<ts.startTime.m<<", ends by "<< endTime.h<<":"<<endTime.m<<" ]"<< endl;; 
+cout<<" [starts at "<< ts.startTime.h<<":"<< ts.startTime.m<<", ends by "<< endTime.h<<":"<< endTime.m<<" ]"<< endl;; 
 
 
 
@@ -304,8 +306,8 @@ int main() {
     cin>>time.h>>time.m;
     cout<<"Enter second time: "<< endl;
     cin>>later.h>>later.m;
-    cout<<"These moments of time are "<< minutesSinceMidnight(time)<<" minutes after midnight."<<endl;
-	cout<<"The interval between them is "<<minutesUntil(time,later) << " minutes."<<endl;
+    cout<<"These moments of time are "<< minutesSinceMidnight(time)<<" minutes after midnight."<< endl;
+	cout<<"The interval between them is "<< minutesUntil(time,later) << " minutes."<< endl;
 	cout<<"Enter a time you want to add time to (Time, minutes): "<< endl;
     cin>>addTo.h>>addTo.m>>minutesToAdd;
     Time added=addMinutes(addTo,minutesToAdd);
