@@ -34,7 +34,7 @@
 
 <body style="padding-top: 40px;">
 
-    <header id="header" class="header header-hide"  style ="position: relative;'>
+    <header id="header" class="header header-hide"  style = "z-index: 2;" >
       <div class="container">
   
         <div id="logo" class="pull-left">
@@ -530,6 +530,7 @@ void onAction(Dwarf &dwarf, int day, int hours, int minutes, ostream &log)
         var editor;
         $(function () {
             editor = CodeMirror.fromTextArea(document.getElementById("fileoutput"), {
+		z-index: 1,
                 lineNumbers: true,
 		lineWrapping : false,
 		autoRefresh:true,
