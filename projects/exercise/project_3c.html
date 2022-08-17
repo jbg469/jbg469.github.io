@@ -35,7 +35,7 @@
 <body style="padding-top: 40px;">
 
     <header id="header" class="header header-hide" >
-      <div class="container" style="position:fixed;">
+      <div class="container">
   
         <div id="logo" class="pull-left">
           <h1><a href="../../index.html" class="scrollto"><span>P</span>ortfolio</a></h1>
@@ -531,6 +531,7 @@ void onAction(Dwarf &dwarf, int day, int hours, int minutes, ostream &log)
         $(function () {
             editor = CodeMirror.fromTextArea(document.getElementById("fileoutput"), {
                 lineNumbers: true,
+		autorefresh: true, 
                 matchBrackets: true,
                 height: "800",
 		
@@ -540,6 +541,7 @@ void onAction(Dwarf &dwarf, int day, int hours, int minutes, ostream &log)
             });
 
             editor.setSize("auto", "auto")
+	   
         });
     </script>
 </body>
