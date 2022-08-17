@@ -1,9 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<style>
- body { padding-top: 70px; }
-</style>
   <meta charset="utf-8">
   <title>Portfolio</title>
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
@@ -35,19 +32,19 @@
    
 </head>
 
-<body>
+<body style="padding-top: 40px;">
 
-    <header id="header" class="header header-hide">
-      <div class="container">
+    <header id="header" class="header header-hide" style="position:fixed;">
+      <div class="container" style="position:fixed;">
   
-        <div id="logo" class="pull-left">
+        <div id="logo" class="pull-left" style="position:fixed;">
           <h1><a href="../../index.html" class="scrollto"><span>P</span>ortfolio</a></h1>
           <!-- Uncomment below if you prefer to use an image logo -->
           <!-- <a href="../../index.html"><img src="img/logo.png" alt="" title="" /></a>-->
         </div>
   
-        <nav id="nav-menu-container">
-          <ul class="nav-menu">
+        <nav id="nav-menu-container" style="position:fixed;" >
+          <ul class="nav-menu" style="position:fixed;">
             <li class="menu-active"><a href="../../index.html">Home</a></li>
             <li><a  href="../../index.html#about-us">About</a></li>
               
@@ -536,6 +533,7 @@ void onAction(Dwarf &dwarf, int day, int hours, int minutes, ostream &log)
                 lineNumbers: true,
                 matchBrackets: true,
                 height: "800",
+		
                 lineWrapping: true,
                 indentUnit: 4,
                 mode: "text/x-csrc" //text/x-python
