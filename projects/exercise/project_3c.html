@@ -531,13 +531,15 @@ void onAction(Dwarf &dwarf, int day, int hours, int minutes, ostream &log)
         $(function () {
             editor = CodeMirror.fromTextArea(document.getElementById("fileoutput"), {
                 lineNumbers: true,
-		autorefresh: true, 
-                matchBrackets: true,
-                height: "800",
-		
-                lineWrapping: true,
-                indentUnit: 4,
-                mode: "text/x-csrc" //text/x-python
+		lineWrapping : false,
+		autoRefresh:true,
+		theme: 'paraiso-light',
+		styleActiveLine: true,
+		fixedGutter:true,
+	        lint:true, 
+		coverGutterNextToScrollbar:false,
+		gutters: ['CodeMirror-lint-markers'],
+		mode: 'javascript'
             });
 
             editor.setSize("auto", "auto")
