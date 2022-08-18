@@ -5,7 +5,7 @@ body {
   color: #333;
 }
 .back-video{
-  position:fixed;
+  position:absolute;
   right: 0;
   left: 0;
   z-index: -1; 
@@ -164,7 +164,7 @@ span {
   padding: 6px 0 0 0;
 }
 #header #logo h1 {
-  color: #fff;
+  color: #505050;
   font-family: "Philosopher", sans-serif;
   font-size: 26px;
   font-weight: 500;
@@ -173,14 +173,14 @@ span {
 }
 
 #header #logo h1 a {
-  color: #fff;
+  color: #555;
   line-height: 1;
   display: inline-block;
   text-decoration: none;
 }
 
 #header #logo h1 a span {
-  color: #fff;
+  color: ##71c55d;
 }
 
 #header #logo img {
@@ -542,24 +542,24 @@ body.mobile-nav-active #mobile-nav-toggle i {
 # Sections
 --------------------------------------------------------------*/
 .padd-section {
-  padding-bottom: 80px;
-  padding-top: 80px;
+  padding-bottom: 0px;
+  padding-top: 0px;
 }
 
 @media (max-width: 992px) {
   .padd-section {
-    padding-top: 40px;
-    padding-bottom: 40px;
+    padding-top: 0px;
+    padding-bottom: 0px;
   }
 }
 
 .section-title {
-  margin-bottom: 80px;
+  margin-bottom: 0px;
 }
 
 @media (max-width: 992px) {
   .section-title {
-    margin-bottom: 40px;
+    margin-bottom: 0px;
   }
 }
 
