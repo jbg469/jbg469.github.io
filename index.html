@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en"
 <head>
   <style>
       img.ex1 {
@@ -7,6 +7,12 @@
       margin-right: auto;
       margin-left: auto;
       padding-bottom: 20px;
+      }
+      .back-video{
+       position:absolute;
+       right:0;
+       left:0;
+       z-idex:-1;
       }
   </style>
   <meta charset="utf-8">
@@ -48,7 +54,6 @@
 </head>
 
 <body>
-
   <header id="header" class="header header-hide" style = "z-index:10 ;">
     <div class="container">
 
@@ -78,6 +83,9 @@
   ============================-->
   <section id="hero" class="wow fadeIn">
     <div class="hero-container">
+      <video autoplay loop muted plays-inline class = "back-video">
+        <source src ="img/video.mp4" type = "video/mp4" > 
+      </video>
       <h1>John Guevara</h1>
       <h2>NYU Cybersecurity Master's Student</h2>
       <img src="img/hero-img.png" alt="Hero Imgs">
