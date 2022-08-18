@@ -145,7 +145,6 @@ span {
 #header #logo {
   padding: 6px 0 0 0;
 }
-
 #header #logo h1 {
   color: #505050;
   font-family: "Philosopher", sans-serif;
@@ -175,6 +174,24 @@ span {
   background: #fff;
   box-shadow: 0 3px 7px rgba(0, 0, 0, 0.1);
 }
+video.back-video{
+  position:absolute;
+  right: 0;
+  left: 0;
+  z-index: -1; 
+}
+@media (min-aspect-ratio: 16/9){
+  video.back-video{
+  width: 100%;
+  height: auto;
+ }
+}
+@media (max-aspect-ratio: 16/9){
+ video.back-video{
+ width: auto;
+ height: 100%;
+ }
+} 
 
 /*--------------------------------------------------------------
 # Hero Section
@@ -193,24 +210,7 @@ span {
     background-attachment: fixed;
   }
 }
-#hero .back-video{
-  position:absolute;
-  right:0;
-  left:0;
-  z-index:-1; 
-}
-@media (min-aspect-ratio: 16/9){
- .back-video{
-  width:100%;
-  height:auto;
- }
-}
-@media (max-aspect-ratio: 16/9){
-.back-video{
- width:auto;
- height:100%;
- }
-} 
+
 #hero .hero-container {
   position: absolute;
   bottom: 0;
