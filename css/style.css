@@ -5,7 +5,7 @@ body {
   color: #333;
 }
 .back-video{
-  position:absolute;
+  position:fixed;
   right: 0;
   left: 0;
   z-index: -1; 
@@ -542,24 +542,24 @@ body.mobile-nav-active #mobile-nav-toggle i {
 # Sections
 --------------------------------------------------------------*/
 .padd-section {
-  padding-bottom: 0px;
-  padding-top: 0px;
+  padding-bottom: 80px;
+  padding-top: 80px;
 }
 
 @media (max-width: 992px) {
   .padd-section {
-    padding-top: 0px;
-    padding-bottom: 0px;
+    padding-top: 40px;
+    padding-bottom: 40px;
   }
 }
 
 .section-title {
-  margin-bottom: 0px;
+  margin-bottom: 80px;
 }
 
 @media (max-width: 992px) {
   .section-title {
-    margin-bottom: 0px;
+    margin-bottom: 40px;
   }
 }
 
@@ -595,7 +595,7 @@ body.mobile-nav-active #mobile-nav-toggle i {
 
 #get-started .feature-block {
   background: #fff none repeat scroll 0 0;
-  padding: 30px 20px;
+  padding: 0px 0px;
   transition: all 0.5s ease-in-out 0s;
 }
 
@@ -611,11 +611,11 @@ body.mobile-nav-active #mobile-nav-toggle i {
 }
 
 #get-started .feature-block h4 {
-  margin-bottom: 20px;
+  margin-bottom: 0px;
 }
 
 #get-started .feature-block p {
-  margin-bottom: 20px;
+  margin-bottom: 0px;
 }
 
 #get-started .feature-block a {
